@@ -96,7 +96,7 @@ class HomeScreen extends StatelessWidget {
                         '23 °C',
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 32,
+                            fontSize: 38,
                             fontWeight: FontWeight.w700),
                       ),
                     ),
@@ -105,10 +105,107 @@ class HomeScreen extends StatelessWidget {
                         'Thunderstrom',
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 36,
-                            fontWeight: FontWeight.w700),
+                            fontSize: 28,
+                            fontWeight: FontWeight.w500),
                       ),
-                    )
+                    ),
+                    const Center(
+                      child: Text(
+                        'Thursday, 12:43 am',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w300),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    //?_____________________________ Rows _______________________
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 5, horizontal: 10),
+                          decoration: BoxDecoration(
+                            //add a thin border
+                            border: Border.all(color: Colors.white, width: 1),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Row(
+                            children: [
+                              Image.asset(
+                                'assets/11.png',
+                                scale: 8,
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              const Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Sunrise',
+                                    style: TextStyle(
+                                        fontSize: 14,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w300),
+                                  ),
+                                  Text(
+                                    '5:24 am',
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w500),
+                                  ),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 5, horizontal: 10),
+                          decoration: BoxDecoration(
+                            //add a thin border
+                            border: Border.all(color: Colors.white, width: 1),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Row(
+                            children: [
+                              Image.asset(
+                                'assets/12.png',
+                                scale: 8,
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              const Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Sunset',
+                                    style: TextStyle(
+                                        fontSize: 14,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w300),
+                                  ),
+                                  Text(
+                                    '6:04 pm',
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w500),
+                                  ),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    const Padding(padding: EdgeInsets.symmetric(horizontal: 5),child: Divider(),)//!____________ Divider___________
                   ],
                 ),
               ),
