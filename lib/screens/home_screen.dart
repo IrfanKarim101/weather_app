@@ -75,7 +75,7 @@ class HomeScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      "This_is_text!",
+                      "📍 Sujo Humzo, Gilgit Baltistan",
                       style: TextStyle(
                           color: Colors.white, fontWeight: FontWeight.w400),
                     ),
@@ -83,7 +83,7 @@ class HomeScreen extends StatelessWidget {
                       height: 8,
                     ),
                     const Text(
-                      "Welcome",
+                      "Good Morning",
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
@@ -130,7 +130,7 @@ class HomeScreen extends StatelessWidget {
                               vertical: 5, horizontal: 10),
                           decoration: BoxDecoration(
                             //add a thin border
-                            border: Border.all(color: Colors.white, width: 1),
+                            border: Border.all(color: Colors.white.withOpacity(0.65), width: 1),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Row(
@@ -169,7 +169,7 @@ class HomeScreen extends StatelessWidget {
                               vertical: 5, horizontal: 10),
                           decoration: BoxDecoration(
                             //add a thin border
-                            border: Border.all(color: Colors.white, width: 1),
+                            border: Border.all(color: Colors.white.withOpacity(0.65), width: 1),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Row(
@@ -205,7 +205,94 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const Padding(padding: EdgeInsets.symmetric(horizontal: 5),child: Divider(),)//!____________ Divider___________
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      child: Divider(
+                        color: Colors.white.withOpacity(0.55),
+                      ),
+                    ), //?____________ Rows 2___________
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 5, horizontal: 10),
+                          decoration: BoxDecoration(
+                            //add a thin border
+                            border: Border.all(color: Colors.white.withOpacity(0.65), width: 1),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Row(
+                            children: [
+                              Image.asset(
+                                'assets/13.png',
+                                scale: 8,
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              const Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Temp Max',
+                                    style: TextStyle(
+                                        fontSize: 14,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w300),
+                                  ),
+                                  Text(
+                                    '27 °C',
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w500),
+                                  ),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 5, horizontal: 10),
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.white.withOpacity(0.65), width: 1),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Row(
+                            children: [
+                              Image.asset(
+                                'assets/14.png',
+                                scale: 8,
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              const Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Temp Min',
+                                    style: TextStyle(
+                                        fontSize: 14,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w300),
+                                  ),
+                                  Text(
+                                    '19 °C',
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w500),
+                                  ),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
