@@ -19,5 +19,5 @@ final class WeatherBlocSuccess extends WeatherBlocState {
   const WeatherBlocSuccess({required this.weather});
 
   @override
-  List<Object> get props => [weather];  //! Time Stamp: 32:31
+  List<Object> get props => [weather];  
 }
