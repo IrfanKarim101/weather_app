@@ -18,7 +18,6 @@ class MyApp extends StatelessWidget {
       home: FutureBuilder(
         future: _determinePosition(),
         builder: (context, snapshot) {
-
           if (snapshot.hasData) {
             debugPrint(
                 '____________________________________ Snapshot has Data ________________________________________');
@@ -63,7 +62,9 @@ Future<Position> _determinePosition() async {
     // Location services are not enabled don't continue
     // accessing the position and request users of the
     // App to enable the location services.
+    debugPrint("Location disabled");
     return Future.error('Location services are disabled.');
+    
   }
 
   permission = await Geolocator.checkPermission();
