@@ -22,7 +22,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      scaffoldMessengerKey: _scaffoldMessengerKey, // Set the key here
+      scaffoldMessengerKey: _scaffoldMessengerKey, 
       home: FutureBuilder(
         future: _determinePosition(),
         builder: (context, snapshot) {
